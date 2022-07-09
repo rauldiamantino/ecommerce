@@ -206,6 +206,11 @@ ul li {
     height: 200px;
     max-width: 100%;
     object-fit: contain;
+    transition: 0.5s;
+}
+
+.imagem-produto:hover {
+    transform: scale(1.1);
 }
 
 
