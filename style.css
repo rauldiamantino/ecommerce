@@ -46,12 +46,14 @@ ul li {
     flex-wrap: nowrap;
     align-items: center;
     height: 50px;
+    max-width: 100%;
 }
 
 #topo-left input {
     padding: 0 20px;
     height: 100%;
     width: 340px;
+    max-width: 100%;
     border: 1px solid rgb(204, 202, 202);
 }
 
