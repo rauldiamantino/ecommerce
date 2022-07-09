@@ -193,6 +193,7 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     min-height: 500px;
     font-size: 0.9em;
@@ -301,7 +302,7 @@ ul li {
         
     }
     .imagem-produto {
-        width: 50%;
+        width: 60%;
         height: 40%;    
         object-fit: contain;
     }
