@@ -322,10 +322,20 @@ footer {
 /* Responsivo 660px */
 @media (max-width:860px) {
 
+    /* Alinhamento do Topo */
+    #topo {
+        text-align: center;
+        justify-content: center;
+    }
+
     /* Campo pesquisasr */
     #topo-left {
         max-width: 100%;
         font-size: 0.9em;
+    }
+
+    #carrinho-topo {
+        justify-content: center;
     }
 
 
