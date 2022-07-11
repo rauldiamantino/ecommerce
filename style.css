@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+/* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
     font-family: Quicksand;
     font-size: 13px;
     font-weight: lighter;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 a {
@@ -38,6 +39,8 @@ ul li {
     list-style-type: none;
 }
 
+
+/* Topo Fixado */
 header {
     position: fixed;
     background-color: #fff;
@@ -71,13 +74,13 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    height: 50px;    
+    height: 50px;  
 }
 
 #topo-left input {
     padding: 0 20px;
     height: 100%;
-    width: 300px;
+    width: 250px;
     border: 1px solid rgb(204, 202, 202);
 }
 
@@ -91,6 +94,7 @@ header {
     height: 100%;
     border: 1px solid rgb(204, 202, 202);
     border-left: none;
+    cursor: pointer;
 }
 
 #topo-left-img {
@@ -139,7 +143,6 @@ header {
 
 
 /* Menu Categorias / Menu Principal */
-
 #menu-categorias ul {
     display: flex;
     flex-direction: row;
@@ -156,22 +159,101 @@ header {
 }
 
 #menu-categorias a:hover {
-    color: #fff;
-    background-color: rgb(109, 108, 108);
+    color: #000;
+    background-color: rgb(219, 219, 219);
 }
 
-/* Vitrine da Loja */
 
+/* Subitens do Menu */
+#menu-categorias li ul {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    padding: 0 20px;
+    width: 250px;
+}
+
+#menu-categorias li:hover .subitens {
+    display: block;
+    background-color: #fff;
+}
+
+#menu-categorias li ul a {
+    padding: 3px 0;
+    border-bottom: 1px solid silver;
+}
+
+#menu-categorias li ul a:hover {
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Menu Responsivo */
+#menucat-responsivo {
+    position: absolute;
+    opacity: 0;
+}
+
+
+/* Botão "Hamburguer" */
+label {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: none;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #000;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+/* #menucat-responsivo:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menucat-responsivo:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menucat-responsivo:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+} */
+
+/* Vitrine da Loja */
 #conteudo {
     width: 100%;
-    padding: 168px 30px 0;
+    margin: auto;
+    /* padding: 168px 0 0 0; */
 }
 
 /* Banner Principal */
-
 .banner-principal {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 #banner-principal-img {
@@ -180,8 +262,27 @@ header {
     object-fit: cover;
 }
 
+/* Banner Secundário */
+.banner-triplo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.banner-triplo-img {
+   width: 33%;
+   height: auto;
+}
 
 /* Módulo de Produtos */
+
+.modulo-produtos {
+    padding: 20px 20px 0 20px;
+}
+
 .modulo-produtos h1 {
     font-size: 22px;
     padding: 10px 0;
@@ -192,29 +293,26 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 20px;
-    
+    padding: 20px 10px 0; 
 }
 
-/* Relative para sobrepor a tag */
 .link-produto-item {
     width: 100%;
     padding: 10px;
     display: flex;
-
 }
 
 .link-produto-item:hover {
     text-decoration: none;
 }
 
-.produto-item {
-    position: relative;
+.produto-item { 
+    position: relative; /* Relative para sobrepor a tag do produto*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid white; /* Borda da cor do background para não ter mudança no layout no hover */
     padding: 10px;
 }
 
@@ -228,7 +326,7 @@ header {
     object-fit: contain;
 }
 
-/* Tag */
+/* Tag do produto */
 .produto-item .tag-produto {
     position: absolute;
     background-color: rgba(255, 41, 41, 0.671);
@@ -241,15 +339,13 @@ header {
 }
 
 .textos-produto {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
     padding-top: 10px;
 }
 
 .nome-produto {
     font-size: 16px;
     font-weight: lighter;
+    line-height: 1.5;
 }
 
 .preco-produto {
@@ -261,27 +357,38 @@ header {
     padding-bottom: 10px;
 }
 
-/* .btn-produto {
-    background-color: red;
-    padding: 10px 20px;
-    width: 130px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.5s;
+/* Módulo de Vídeos */
+.modulo-video{    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
-.btn-produto:hover {
-    background-color: rgba(255, 0, 0, 0.747);
-    padding: 10px 20px;
-    width: 130px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-} */
+.video {
+    width: 70%;
+    height: 80vh;
+    object-fit: contain;
+}
 
+/* Banner Duplo Hozitontal */
+.banner-duplo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.banner-duplo-img {
+    width: 50%;
+    height: auto;
+    padding: 0 10px;
+}
+
+/* Rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -319,19 +426,20 @@ footer {
     text-align: center;
 }
 
-/* Responsivo 660px */
+/* Responsivo 860px */
 @media (max-width:860px) {
-    /* Topo Fixado */
+    /* Topo Fixado Responsivo*/
     header {
         position: static;
     }
 
+    /* Conteúdo/Main Responsivo */
     #conteudo {
         padding: 0;
+        width: 100%;
     }
 
-
-    /* Alinhamento do Topo */
+    /* Alinhamento do Topo Responsivo*/
     #topo {
         flex-direction: column;
         text-align: center;   
@@ -341,22 +449,63 @@ footer {
         justify-content: center;
     }
 
-    /* Menu Categorias */
+    #menu-categorias {
+        
+    }
+
+    #menu-categorias ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        width: 250px;
+        right: -100%;
+        top: 40px;
+        height: 100vh;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menucat-responsivo:checked ~ ul{
+        left: 0;       
+    }
+
+    #menu-categorias li ul {
+        display: none;
+        background-color: #fff;
+        position: relative;
+        left: 0;
+        padding: 0 20px;
+        width: 250px;
+        height: auto;
+        top:0;
+    }
+
+    /* Menu Categorias Responsivo
     #menu-categorias ul {
         flex-direction: column;
         text-align: center;
         padding: 10px;
         width: 100%;    
     }
+
     #menu-categorias ul li {
         padding: 10px;        
     }
+
     #menu-categorias ul a {
         padding: 10px;
     }
+
     #menu-categorias ul a:hover {
         padding: 10px;
-    }
+    } */
+
+    /* Menu Categorias Responsivo */
+
 
     #banner-principal-img {
         width: 100%;
@@ -364,7 +513,7 @@ footer {
         object-fit: cover;
     }
 
-    /* Produtos */
+    /* Produtos Responsivo*/
     .container-produtos {
         flex-wrap: wrap;
     }
@@ -383,8 +532,39 @@ footer {
         object-fit: contain;
     }
 
-    /* Footer */
+    /* Banner Secundário Responsivo */    
+    .banner-triplo {
+        gap: 1%;
+        width: 99%;
+        padding: 0;
+    }
 
+    .banner-triplo-img {
+        width: 50%;
+     }
+
+     .banner-triplo-img:nth-child(3) {
+        display: none;
+     }
+
+     /* Vídeo Responsivo */
+     .video {
+        width: 100%;
+        height: 200px;
+        }
+
+    .banner-duplo {
+        flex-direction: column;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .banner-duplo-img {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    /* Footer Responsivo */
     #footer-top {
         flex-direction: column;
         text-align: center;
