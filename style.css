@@ -49,7 +49,6 @@ header {
 /* Primeiro topo, acima do menu de categorias */
 #topo {
     width: 100%;
-    min-height: 150px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -73,8 +72,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    height: 50px;
-    
+    height: 50px;    
 }
 
 #topo-left input {
@@ -169,7 +167,7 @@ header {
 
 #conteudo {
     width: 100%;
-    padding: 210px 30px;
+    padding: 194px 30px 0;
 }
 
 /* Banner Principal */
@@ -294,29 +292,33 @@ footer {
 }
 
 #footer-top {
-    min-height: 240px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 25px 0;
     margin-top: 20px;
-    border-top: 1px solid rgb(204, 202, 202);
-    
+    border-top: 1px solid rgb(204, 202, 202);   
 }
 
 #footer-top h2 {
     
-    padding-bottom: 5px;
-    width: 100%;
-    margin-bottom: 15px;
     
 }
 
 #bloco1-footer, #bloco2-footer, #bloco3-footer, #bloco4-footer {
     min-width: 25%;
     padding: 0 50px 20px;
+}
 
+#pgto {
+    width: 180px;
+    height: auto;
+}
+
+#ssl {
+    width: 180px;
+    height: auto;
 }
 
 #footer-bottom {
@@ -327,6 +329,15 @@ footer {
 
 /* Responsivo 660px */
 @media (max-width:860px) {
+    /* Topo Fixado */
+    header {
+        position: static;
+    }
+
+    #conteudo {
+        padding: 0;
+    }
+
 
     /* Alinhamento do Topo */
     #topo {
@@ -343,7 +354,6 @@ footer {
     #carrinho-topo {
         justify-content: center;
     }
-
 
     /* Menu Categorias */
     #menu-categorias ul {
@@ -366,7 +376,10 @@ footer {
     .container-produtos {
         flex-wrap: wrap;
     }
-
+    
+    .modulo-produtos h1 {
+        text-align: center;
+    }
 
     .link-produto-item {
         width: 50%;
