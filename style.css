@@ -227,7 +227,7 @@ label span {
 #conteudo {
     width: 100%;
     margin: auto;
-    /* padding: 168px 0 0 0; */
+    padding: 160px 0 0 0;
 }
 
 /* Banner Principal */
@@ -409,7 +409,7 @@ footer {
 @media (max-width:860px) {
     /* Topo Fixado Responsivo*/
     header {
-        position: static;
+        position: fixed;
     }
 
     /* Topo Responsivo */    
@@ -488,7 +488,7 @@ footer {
 
     /* Conteúdo/Main Responsivo */
     #conteudo {
-        padding: 0;
+        padding: 115px 0 0 0;
         width: 100%;
     }
         
