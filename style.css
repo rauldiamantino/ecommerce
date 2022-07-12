@@ -45,7 +45,7 @@ header {
     position: fixed;
     background-color: #fff;
     width: 100%;
-    z-index: 1000
+    z-index: 1000;
 }
 
 /* Primeiro topo, acima do menu de categorias */
@@ -54,7 +54,7 @@ header {
     display: flex;
     padding-top: 10px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -115,30 +115,36 @@ header {
     color: rgb(255, 115, 0);
 }
 
-#nomeloja-topo {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: rgb(255, 115, 0);
-    font-style: italic;
-}
-
 /* Lado direito do topo */
 #menu-topo ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 60px;    
+}
+
+#menu-topo ul li:nth-child(1) {
+    padding: 0;
 }
 
 #menu-topo ul li {
-    padding: 0 15px 5px 0;
-}
-
-#carrinho-topo {
+    padding: 0 5px 0px 5px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-#carrinho-topo p {
-    padding: 0 15px 0 0;
+#menu-topo ul li a{
+    line-height: 0;
+}
+
+#icon-conta {
+    width: 18px;
+    height: auto;
+}
+
+#icon-carrinho {
+    width: 35px;
+    height: auto;
 }
 
 
@@ -146,7 +152,7 @@ header {
 #menu-categorias ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 10px 0;
 }
@@ -199,49 +205,23 @@ header {
 /* Botão "Hamburguer" */
 label {
     cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 10px;
+    position: static;
     display: none;
-    height: 22px;
-    width: 30px;
+    /* height: 22px;
+    width: 30px; */
 }
 
 label span {
     position: absolute;
     display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 30px;
-    background-color: #000;
-    transition: 0.25s ease-in-out;
-}
-
-label span:nth-child(1){
+    font-size: 32px;
     top: 0;
+    left: 10px;
+    z-index: 10100;
+    padding: 0px;
 }
 
-label span:nth-child(2){
-    top: 8px;
-}
 
-label span:nth-child(3){
-    top: 16px;
-}
-
-/* #menucat-responsivo:checked + label span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: 8px;
-}
-
-#menucat-responsivo:checked + label span:nth-child(2) {
-    opacity: 0;
-}
-
-#menucat-responsivo:checked + label span:nth-child(3) {
-    transform: rotate(45deg);
-    top: 8px;
-} */
 
 /* Vitrine da Loja */
 #conteudo {
@@ -278,7 +258,6 @@ label span:nth-child(3){
 }
 
 /* Módulo de Produtos */
-
 .modulo-produtos {
     padding: 20px 20px 0 20px;
 }
@@ -433,24 +412,47 @@ footer {
         position: static;
     }
 
-    /* Conteúdo/Main Responsivo */
-    #conteudo {
-        padding: 0;
+    /* Topo Responsivo */    
+    #topo-center {
+        margin-left: 50px;
+    }
+
+    #logo-topo {
+        font-size: 2em;
+    }
+    
+    #topo, #topo-left, #topo-center, #topo-right {
+        padding: 0px;
+    }
+
+    #topo-left {
         width: 100%;
+        padding: 0;
+        background-color: rgb(247, 247, 247);
+        order: 3;        
     }
 
-    /* Alinhamento do Topo Responsivo*/
-    #topo {
-        flex-direction: column;
-        text-align: center;   
+    #topo-left input {
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+    }    
+
+    #menu-topo ul li {
+        padding: 0px 10px;
+        height: 30px;
     }
 
-    #carrinho-topo {
-        justify-content: center;
+    #icon-carrinho {
+        width: 20px;
+        height: auto;
     }
 
-    #menu-categorias {
-        
+    #menu-topo ul li:nth-child(2) {
+        display: none;
+    }
+
+    #menu-topo ul li:nth-child(3) {
+        display: none;
     }
 
     #menu-categorias ul {
@@ -469,7 +471,7 @@ footer {
         display: block;
     }
 
-    #menucat-responsivo:checked ~ ul{
+    #menucat-responsivo:checked ~ ul {
         left: 0;       
     }
 
@@ -484,29 +486,12 @@ footer {
         top:0;
     }
 
-    /* Menu Categorias Responsivo
-    #menu-categorias ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-        width: 100%;    
+    /* Conteúdo/Main Responsivo */
+    #conteudo {
+        padding: 0;
+        width: 100%;
     }
-
-    #menu-categorias ul li {
-        padding: 10px;        
-    }
-
-    #menu-categorias ul a {
-        padding: 10px;
-    }
-
-    #menu-categorias ul a:hover {
-        padding: 10px;
-    } */
-
-    /* Menu Categorias Responsivo */
-
-
+        
     #banner-principal-img {
         width: 100%;
         height: 388px;
@@ -541,17 +526,17 @@ footer {
 
     .banner-triplo-img {
         width: 50%;
-     }
+    }
 
      .banner-triplo-img:nth-child(3) {
         display: none;
-     }
+    }
 
      /* Vídeo Responsivo */
      .video {
         width: 100%;
         height: 200px;
-        }
+    }
 
     .banner-duplo {
         flex-direction: column;
