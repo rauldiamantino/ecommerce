@@ -106,13 +106,10 @@ header {
 #topo-center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #logo-topo {
-    font-size: 2.4em;
-    font-weight: bold;
-    color: rgb(255, 115, 0);
+    width: 250px;
 }
 
 /* Lado direito do topo */
@@ -137,10 +134,15 @@ header {
     line-height: 0;
 }
 
+#menu-topo ul li:nth-child(1) { /* desativar link */
+    pointer-events: none;
+}
+
 #icon-conta {
     width: 18px;
     height: auto;
 }
+
 
 #icon-carrinho {
     width: 35px;
@@ -347,7 +349,7 @@ label span {
 
 .video {
     width: 70%;
-    height: 80vh;
+    height: 500px;
     object-fit: contain;
 }
 
@@ -414,11 +416,12 @@ footer {
 
     /* Topo Responsivo */    
     #topo-center {
-        margin-left: 50px;
+        margin: auto;
     }
 
     #logo-topo {
-        font-size: 2em;
+        width: 200px;
+        margin-left: 50px;
     }
     
     #topo, #topo-left, #topo-center, #topo-right {
@@ -439,13 +442,16 @@ footer {
 
     #menu-topo ul li {
         padding: 0px 10px;
-        height: 30px;
     }
 
     #icon-carrinho {
         width: 20px;
         height: auto;
     }
+
+    #menu-topo ul li:nth-child(1) {
+        pointer-events: all;       
+    }    
 
     #menu-topo ul li:nth-child(2) {
         display: none;
@@ -535,7 +541,7 @@ footer {
      /* Vídeo Responsivo */
      .video {
         width: 100%;
-        height: 200px;
+        height: 250px;
     }
 
     .banner-duplo {
