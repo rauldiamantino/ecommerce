@@ -333,9 +333,20 @@ label span {
 }
 
 /* Tag do produto */
-.produto-item .tag-produto {
+.produto-item .tag-frete {
     position: absolute;
     background-color: rgba(255, 41, 41, 0.671);
+    top: 2px;
+    left: 0;
+    padding: 5px;
+    border-radius: 0 7px 7px 0;
+    color: white;
+    font-size: 0.9em;
+}
+
+.produto-item .tag-lancamento {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.671);
     top: 2px;
     left: 0;
     padding: 5px;
@@ -501,26 +512,7 @@ footer {
         height: 388px;
         object-fit: cover;
     }
-
-    /* Produtos Responsivo*/
-    .container-produtos {
-        flex-wrap: wrap;
-    }
     
-    .modulo-produtos h1 {
-        text-align: center;
-    }
-
-    .link-produto-item {
-        width: 50%;
-    }
-
-    .imagem-produto {   
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
     /* Banner Triplo Responsivo */    
     .banner-triplo {
         gap: 1%;
@@ -548,11 +540,32 @@ footer {
         padding: 0px 20px;
     }
 
-    
      /* Vídeo Responsivo */
      .video {
         width: 100%;
         height: 250px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    /* Produtos Responsivo*/
+    .container-produtos {
+        flex-wrap: wrap;
+    }
+    
+    .modulo-produtos h1 {
+        text-align: center;
+    }
+
+    .link-produto-item {
+        width: 50%;
+    }
+
+    .imagem-produto {   
+        max-width: 100%;
+        height: auto;
+        padding-top: 15px;
+        object-fit: contain;
     }
 
     /* Rodapé Responsivo */
