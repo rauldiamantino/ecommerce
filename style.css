@@ -244,14 +244,31 @@ label span {
     object-fit: cover;
 }
 
-/* Banner Secundário */
+
+/* Banner Duplo Hozitontal */
+.banner-duplo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.banner-duplo-img {
+    width: 50%;
+    height: auto;
+    padding: 0 5px;
+}
+
+/* Banner triplo */
 .banner-triplo {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 .banner-triplo-img {
@@ -261,7 +278,7 @@ label span {
 
 /* Módulo de Produtos */
 .modulo-produtos {
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .modulo-produtos h1 {
@@ -274,12 +291,12 @@ label span {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 20px 10px 0; 
+    padding: 0px 10px; 
 }
 
 .link-produto-item {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px 0px 10px;
     display: flex;
 }
 
@@ -293,12 +310,12 @@ label span {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid white; /* Borda da cor do background para não ter mudança no layout no hover */
-    padding: 10px;
+    border: 1px solid rgb(204, 202, 202);
+    padding: 0 10px;
 }
 
 .produto-item:hover {
-    border: 1px solid rgb(204, 202, 202);
+    border: 1px solid rgb(150, 149, 149); 
 }
 
 .imagem-produto {   
@@ -311,7 +328,7 @@ label span {
 .produto-item .tag-produto {
     position: absolute;
     background-color: rgba(255, 41, 41, 0.671);
-    top: 0;
+    top: 2px;
     left: 0;
     padding: 5px;
     border-radius: 0 7px 7px 0;
@@ -342,31 +359,15 @@ label span {
 .modulo-video{    
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px 10px;
     width: 100%;
     height: 100%;
 }
 
 .video {
-    width: 70%;
+    width: 100%;
     height: 500px;
     object-fit: contain;
-}
-
-/* Banner Duplo Hozitontal */
-.banner-duplo {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 30px;
-}
-
-.banner-duplo-img {
-    width: 50%;
-    height: auto;
-    padding: 0 10px;
 }
 
 /* Rodapé */
