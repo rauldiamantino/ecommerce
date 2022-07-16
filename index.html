@@ -5,497 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sua Loja</title>
+    <title>Diamantino Store</title>
 </head>
 <body>
-
-    <!-- Topo -->
     <header>
-        <!-- Acima do menu Categorias -->
-        <div id="topo">           
-            <div id="topo-left">
-                <div id="topo-left-pesquisar">
-                    <input type="text" value="Digite o que você procura...">
-                    <div id="bloco-img-pesquisa">
-                        <img src="img/pesquisar.png" alt="Pesquisar" id="topo-left-img">
-                    </div>
-                </div>
-            </div>
-            <div id="topo-center">
-                <img src="img/logo.png" alt="logomarca" id="logo-topo">            
-            </div>
-            <!-- Menu de Acesso / Área Logada -->
-            <div id="topo-right">
-                <div id="topo-right-menu">
-                    <nav id="menu-topo">
-                        <ul>
-                            <li><a href=""><img src="img/minhaconta.png" alt="minha conta" id="icon-conta"></a></li>
-                            <li><a href="#">Entrar</a></li>
-                            <li><a href="#">Criar Conta</a></li>
-                            <li><a href="#"><img src="img/sacola.png" alt="Carrinho" id="icon-carrinho"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Menu Categorias -->
-        <nav id="menu-categorias">
-            <!-- Botão Menu Categorias no Responsivo com CSS -->
-            <input type="checkbox" id="menucat-responsivo">
-            <label for="menucat-responsivo"><span>&#9776;</span></label>
-            <!-- Menu -->
-            <ul>
-                <li><a href="#">BEBÊS</a>
-                    <ul class="subitens">
-                        <li><a href="#">Meninos</a></li>
-                        <li><a href="#">Meninas</a></li>   
-                        <li><a href="#">Recém Nascido</a></li>     
-                    </ul>
-                </li>
-                <li><a href="#">DVDS</a></li>
-                <li><a href="#">ESPORTE & LAZER</a></li>
-                <li><a href="#">ELETRÔNICOS</a>
-                    <ul class="subitens">
-                        <li><a href="#">Smartphones</a></li>
-                        <li><a href="#">Computadores</a></li>
-                        <li><a href="#">Acessórios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">PERFUMES</a></li>
-                <li><a href="#">ELETRODOMÉSTICOS</a></li>
-                <li><a href="#">MODA FEMININA</a></li>
-                <li><a href="#">ACESSÓRIOS</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Vitrine -->
-    <main id="conteudo">
-        
-        <!-- Banner Principal -->
-        <section class="banner-principal">
-            <img src="img/banner-principal.jpg" alt="Black Friday" id="banner-principal-img">
-        </section>
-
-        <!-- Módulo de Vídeo -->
-        <section class="modulo-video">
-            <iframe src="https://www.youtube.com/embed/dakrH9JI1C0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-        </section>
-
-        <!-- Banner Triplo -->
-        <section class="banner-triplo">
-            <img src="img/banner-quadrado.jpg" class="banner-triplo-img">
-            <img src="img/banner2-quadrado.png" class="banner-triplo-img">
-            <img src="img/banner3-quadrado.jpg" class="banner-triplo-img">
-        </section>       
-        
-        <!-- Categoria de Produtos -->
-        <section class="modulo-produtos">         
-            <h1>DESTAQUE</h1>
-
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
+    <!--  Tarja Topo -->
+    <div id="tarja-topo">
+        <p> Frete GRÁTIS para TODO BRASIL em compras acima de R$99</p>
+    </div>
     
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
+    <!-- topo -->
+    <div id="topo">
+        <img src="img/logo.png" alt="Logomarca" id="logo">
+        <div id="pesquisar">
+            <input type="text" placeholder="o que você procura hoje?" id="pesquisar-campo">
+            <img src="img/pesquisar.png" id="pesquisar-img">
+        </div>
+        <div id="acesso">
+            <a href="#">
+                <img src="img/minhaconta.png" alt="Minha Conta" id="minha-conta-img" href="">
+            </a>
+            <a href="#">
+                <img src="img/carrinho.png" alt="Carrinho" id="carrinho-img">
+            </a>
+        </div>
+
+        <!-- Botão do Menu (Categorias) Responsivo -->
+        <input type="checkbox" id="btn-responsivo">
+        <label for="btn-responsivo" id="label-btn">&#9776;</label>
+
+
+        <!-- Menu Categorias -->
+        <div id="menu-categorias">
+            <nav>   
+                <ul>
+                    <h2>Categorias</h2>
+                    <li>
+                        <a href="">Meninas</a>
+                        <ul>
+                            <li><a href="">Body</a></li>
+                            <li><a href="">Blusa</a></li>
+                            <li><a href="">Body</a></li>
+                            <li><a href="">Macaquinho</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Meninos</a></li>
+                    <li><a href="">Unissex</a></li>
+                    <li><a href="">Amamentar</a></li>
+                    <li>
+                        <a href="">Brincar</a>
+                        <ul>
+                            <li><a href="">Andadores de Primeiros Passos</a></li>
+                            <li><a href="">Banho, Praia e Piscina</a></li>
+                            <li><a href="">Pelúcias</a></li>
+                            <li><a href="">Livros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Comer</a></li>
+                    <li><a href="">Dormir</a></li>
+                    <li><a href="">Passear</a></li>
+                </ul>
                 
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Módulo de Produtos -->
-            <div class="container-produtos">
-                <!-- Produto 1 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/tv1.png" alt="TV SMART" class="imagem-produto">
-                        <p class="tag-lancamento">Lançamento</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">TV 46" Led 3d Full HD - Smart Tv, C/conversor Digital Integrado (DTV)</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 319,05</p>
-                            <p class="parcelado-produto">ou 18x de R$ 23,18</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 2 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/micro.jpg" alt="MICROONDAS" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Micro-ondas Bmk45ae Smart Food 30l - Brastemp</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 1.599,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 116,15</p>                                
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Produto 3 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/geladeira.jpg" alt="GELADEIRA" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Geladeira / refrigerador Brastemp Side By Preto 540 Litros</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 689,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 50,05</p>                                
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Produto 4 -->
-                <a href="#" class="link-produto-item">
-                    <div class="produto-item">
-                        <img src="img/fogao.png" alt="FOGÃO" class="imagem-produto">
-                        <p class="tag-frete">Frete Grátis</p>
-                        <div class="textos-produto">
-                            <h2 class="nome-produto">Fogão de Embutir Total Grill 4 Bocas Inox-mabe</h2>
-                            <!-- Opções de Pagamento -->
-                            <p class="preco-produto">R$ 199,00</p>
-                            <p class="parcelado-produto">ou 18x de R$ 14,46</p>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>               
-
-        <!-- Banner Duplo -->
-        <section class="banner-duplo">
-            <img src="img/bannerpq-horizontal.png" class="banner-duplo-img">
-            <img src="img/bannerpq-horizontal2.png" class="banner-duplo-img">
-        </section>        
-    </main>          
-
-    <!-- Rodapé -->
+            </nav>
+        </div>
+    </div>
+    </header>
+    
+    <main>
+        <!-- Conteúdo -->
+        <div id="conteudo">
+            
+        </div>
+    </main>
     <footer>
-
-        <!-- Bloco Superior -->
-        <section id="footer-top">
-            <div id="bloco1-footer">
+    <!-- Rodapé -->
+    <div id="rodape">
+        <div id="bloco-top">
+            <div id="institucional">
                 <h2>INSTITUCIONAL</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Troca e Devolução</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
-                    <li><a href="#">Política de Frete</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Nossas Lojas</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
                 </ul>
             </div>
-            <div id="bloco2-footer">
-                <h2>ATENDIMENTO</h2>
+            <div id="conta">
+                <h2>MINHA CONTA</h2>
                 <ul>
-                    <li>De Segunda a Sexta-feira,<br>
-                        das 10h às 17h</li>
-                    <li>(11) 2534-8118<li/>
-                    <li>contato@sualoja.com.br</li>
+                    <li><a href="">Minha Conta</a></li>
+                    <li><a href="">Meus Pedidos</a></li>
                 </ul>
             </div>
-            <div id="bloco3-footer">
+            <div id="duvidas">
+                <h2>DÚVIDAS FREQUENTES</h2>
+                <ul>
+                    <li><a href="">Pagamento</a></li>
+                    <li><a href="">Entrega</a></li>
+                    <li><a href="">Trocas e Devoluções</a></li>
+                    <li><a href="">Tabela de Medidas</a></li>
+                    <li><a href="">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div id="pagamentos">
                 <h2>FORMAS DE PAGAMENTO</h2>
-                <img src="img/pgto.png" alt="Formas de Pagamento" id="pgto">
+                <img src="img/pgto.png" alt="Formas de Pagamentos" id="pagamentos-img">
             </div>
-            
-            <div id="bloco4-footer">
+            <div id="seguranca">
                 <h2>SEGURANÇA</h2>
-                <img src="img/ssl.png" alt="Certificado de Segurança" id="ssl">
+                <img src="img/ssl.png" alt="Segurança" id="seguranca-img">
             </div>
-                </footer>
-        </section>
-
-        <!-- Bloco Inferior -->
-        <section id="footer-bottom">
-            <p>Sua Loja LTDA EPP - CNPJ: 00.000.000/0001-00</p>
-            <p>Endereço: Rua da Sua Loja, 001, sala 02 - CEP 00000-000 - São Paulo/SP</p>
-        </section>
+        </div>
+        <div id="bloco-bottom">
+            <CNPJ>SUA LOJA AQUI LTDA. | CNPJ 00.000.000/0000-0</p>  
+            <Email:>Telefone: (11) 99999-9999 | Email: atendimento@sualoja.com.br</p>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
